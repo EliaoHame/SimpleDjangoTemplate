@@ -1,17 +1,51 @@
 /*标签变化以及文章标签*/
-.post-entry-categories{margin-bottom:10px;}
-.post-entry-categories a{padding:4px 8px;background-color:#19B5FE;color:#fff;font-size:12px;line-height:1;font-weight:400;margin:3px 5px 3px 0;border-radius:2px;display:inline-block;}
-.post-entry-categories a:nth-child(5n){background-color:#4A4A4A}
-.post-entry-categories a:nth-child(5n+1){background-color:#ff5e5c}
-.post-entry-categories a:nth-child(5n+2){background-color:#ffbb50}
-.post-entry-categories a:nth-child(5n+3){background-color:#1ac756}
-.post-entry-categories a:nth-child(5n+4){background-color:#19B5FE}
-.post-entry-categories a:hover{background-color:#1B1B1B;color:#FFF}
+.post-entry-categories {
+    margin-bottom: 10px;
+}
+
+.post-entry-categories a {
+    padding: 4px 8px;
+    background-color: #19B5FE;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 3px 5px 3px 0;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.post-entry-categories a:nth-child(5n) {
+    background-color: #4A4A4A
+}
+
+.post-entry-categories a:nth-child(5n+1) {
+    background-color: #ff5e5c
+}
+
+.post-entry-categories a:nth-child(5n+2) {
+    background-color: #ffbb50
+}
+
+.post-entry-categories a:nth-child(5n+3) {
+    background-color: #1ac756
+}
+
+.post-entry-categories a:nth-child(5n+4) {
+    background-color: #19B5FE
+}
+
+.post-entry-categories a:hover {
+    background-color: #1B1B1B;
+    color: #FFF
+}
+
 .widget-tag-cloud a:hover {
     color: #FFF;
     background: #00a7eb;
     border-color: #00a7eb
 }
+
 .widget-tag-cloud li:hover {
     color: #FFF;
     background: #00a7eb;
@@ -48,7 +82,6 @@
 }
 
 
-
 #header .logo a {
     transition: none;
     background-size: contain;
@@ -59,6 +92,7 @@
     height: 80px;
     left: -20px;
 }
+
 /*底部*/
 #myfooter {
     width: 100%;
@@ -100,6 +134,7 @@ body {
     font-weight: 600;
     margin: 0 0 25px;
 }
+
 .about-title:after {
     content: "";
     background-color: #282828;
@@ -118,7 +153,7 @@ body {
     width: 100%;
 }
 
-.comment-btn:hover{
+.comment-btn:hover {
     background: #282828
 }
 
@@ -130,7 +165,7 @@ textarea {
     resize: vertical;
 }
 
-#id_comment,#id_email,#id_name,#id_url {
+#id_comment, #id_email, #id_name, #id_url {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 5px;
@@ -139,11 +174,11 @@ textarea {
     font-size: 14px;
 }
 
-#label_comment,#label_name,#label_email  {
+#label_comment, #label_name, #label_email {
     color: red;
 }
 
-.comment-list-title,.comment-title {
+.comment-list-title, .comment-title {
     font-size: 20px;
     color: #282828;
     font-weight: 600;
@@ -153,7 +188,7 @@ textarea {
     position: relative;
 }
 
-.comment-title:after,.comment-list-title:after {
+.comment-title:after, .comment-list-title:after {
     content: "";
     background-color: #282828;
     left: 0;
@@ -167,7 +202,7 @@ textarea {
     transition: 0.5s;
 }
 
-.comment-title:hover:after,.comment-list-title:hover:after {
+.comment-title:hover:after, .comment-list-title:hover:after {
     width: 100%;
 }
 
@@ -205,10 +240,10 @@ textarea {
     background: #fff;
     margin-bottom: 15px;
     padding: 15px 25px;
-    border: 2px solid  #fff;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(146,146,146,.1);
-    -moz-box-shadow: 0 2px 5px 0 rgba(146,146,146,.1);
-    box-shadow: 0 2px 5px 0 rgba(146,146,146,.1);
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1);
+    -moz-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1);
+    box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1);
 }
 
 .breadcrumb .seq {
@@ -233,7 +268,7 @@ textarea {
 
 .mod-archive-year {
     color: #19B5FE;
-    font-family: Courier,Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-family: Courier, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 25px
 }
 
@@ -248,3 +283,44 @@ textarea {
     padding-top: 10px;
     padding-bottom: 30px
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowns-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    margin-top: 10px;
+
+}
+
+
+.dropdowns-content > li > a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #404040;
+    line-height: 28px;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdowns-content > li > a:hover {
+    background-color: #00a7eb
+}
+
+
+.dropdown:hover .dropdowns-content {
+    display: block;
+}
+
+
+
+

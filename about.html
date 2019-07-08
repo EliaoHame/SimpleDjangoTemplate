@@ -34,8 +34,15 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left">
                                 <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
-                                <li class="cl-effect-11"><a href="full-width.html" data-hover="归档">归档</a></li>
-                                <li class="cl-effect-11"><a href="full-width.html" data-hover="分类">分类</a></li>
+                                <li class="cl-effect-11"><a href="archive.html" data-hover="归档">归档</a></li>
+                                <li class="cl-effect-11 dropdown">
+                                    <a href="category.html" data-hover="分类">分类</a>
+                                    <ul class="dropdown-menu dropdowns-content">
+                                        <li><a href="category.html">Django 博客教程</a></li>
+                                        <li><a href="category.html">Python教程</a></li>
+                                        <li><a href="category.html">Django用户认证</a></li>
+                                    </ul>
+                                </li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -93,6 +100,7 @@
         </div>
     </div>
 </div>
+<button class="gototop isvisible" style="display: inline-block;"><span>⬆</span></button>
 <!-- 移动设备菜单-->
 <div class="overlay overlay-hugeinc">
     <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>

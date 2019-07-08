@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index</title>
+    <title>Category</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -35,7 +35,7 @@
                             <ul class="nav navbar-nav navbar-left">
                                 <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                                 <li class="cl-effect-11"><a href="full-width.html" data-hover="归档">归档</a></li>
-                                <li class="cl-effect-11"><a href="category.html" data-hover="分类">分类</a></li>
+                                <li class="cl-effect-11"><a href="full-width.html" data-hover="分类">分类</a></li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -58,6 +58,17 @@
     <div class="container">
         <div class="row ">
             <main class="col-md-8">
+                <div class="breadcrumb">
+                    <span itemprop="itemListElement">
+                    <a href="index.html" itemprop="item">
+                        <span itemprop="name">
+                            首页
+                        </span>
+                    </a>
+                </span>
+                    <span class="seq">></span>
+                    <span class="current">文章分类</span>
+                </div>
                 <article class="post post-1">
                     <header class="entry-header">
                         <h1 class="entry-title">
@@ -324,5 +335,3 @@
 <script src="js/script.js"></script>
 </body>
 </html>
-<!--todo 下拉菜单，回到顶部，归档页面优化，分类页面优化，分页优化-->
-

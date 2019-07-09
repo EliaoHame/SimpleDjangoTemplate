@@ -193,7 +193,7 @@ img {
     padding: 0 0 5px 0 !important;
     max-width: 0;
     border-bottom: 1px solid #000;
-    color: #000;
+    color: #0972b4;
     content: attr(data-hover);
     white-space: nowrap;
     -webkit-transition: max-width 0.5s;

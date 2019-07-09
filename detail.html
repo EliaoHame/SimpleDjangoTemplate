@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Detail</title>
+    <title>详情</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="css/pace.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/mystyle.css">
-
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/pace.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 </head>
-<body >
+<body>
 <div id="header">
     <div class="container">
         <header id="site-header">
@@ -27,21 +26,16 @@
                 </div><!-- col-md-4 -->
                 <div class="col-md-8 col-sm-7 col-xs-4">
                     <nav class="main-nav" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" id="trigger-overlay" class="navbar-toggle">
-                                <span class="ion-navicon"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse primary-menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left">
                                 <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                                 <li class="cl-effect-11"><a href="archive.html" data-hover="归档">归档</a></li>
-                                <li class="cl-effect-11 dropdown">
+                                <li class="cl-effect-11 menu-item-has-children">
                                     <a href="category.html" data-hover="分类">分类</a>
-                                    <ul class="dropdown-menu dropdowns-content">
-                                        <li><a href="category.html">Django 博客教程</a></li>
-                                        <li><a href="category.html">Python教程</a></li>
-                                        <li><a href="category.html">Django用户认证</a></li>
+                                    <ul>
+                                        <li><a href="category.html">Django开发</a></li>
+                                        <li><a href="category.html">Python</a></li>
+                                        <li><a href="category.html">软件测试</a></li>
                                     </ul>
                                 </li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
@@ -68,39 +62,68 @@
             <main class="col-md-8">
                 <article class="post post-1">
                     <header class="entry-header">
-                        <h1 class="entry-title">Django 博客开发入门教程：前言</h1>
+                        <h1 class="entry-title">Django中使用session会话</h1>
                         <div class="entry-meta">
-                            <span class="post-category"><a href="#">Django 博客教程</a></span>
+                            <span class="post-category"><a href="#">Django开发</a></span>
                             <span class="post-date"><a href="#"><time class="entry-date"
-                                                                      datetime="2012-11-09T23:15:57+00:00">2017年5月11日</time></a></span>
-                            <span class="post-author"><a href="#">追梦人物</a></span>
+                                                                      datetime="2019-07-01T23:15:57+00:00">2019年07月01日</time></a></span>
                             <span class="comments-link"><a href="#">4 评论</a></span>
-                            <span class="views-count"><a href="#">588 阅读</a></span>
+                            <span class="views-count"><a href="#">888 阅读</a></span>
                         </div>
                     </header>
                     <div class="entry-content clearfix">
                         <div class="post-entry-categories">
-                            <a href="#">标签一</a>
-                            <a href="#">标签二</a>
-                            <a href="#">标签三</a>
+                            <a href="#">Django</a>
+                            <a href="#">Session</a>
+                            <a href="#">Python</a>
                         </div>
-                        <p>Django 是使用 Python 编写的一个开源 Web 框架，可以用来快速搭建一个高性能的网站。</p>
-                        <blockquote><p>Django makes it easier to build better Web apps more quickly and with less
-                            code.</p>
-                            <p>Django 让你以更快的速度、更少的代码、更轻松的方式搭建更好的 Web 应用。</p>
+                        <h1 data-anchor-id="bby8" id="session">session</h1>
+                        <p data-anchor-id="sroo">
+                            django支持匿名会话。它将数据存放在服务器端，并抽象cookies的发送和接收过程。cookie包含一个会话ID而不是数据本身（除非你使用的是基于后端的cookie）。</p>
+                        <div class="md-section-divider"></div>
+                        <h1 data-anchor-id="g8l2" id="session和cookies">session和cookies</h1>
+                        <p data-anchor-id="ge2q">
+                            session依赖于cookies，两者区别在于，session会把所有的数据保存在服务器中，而cookies将以非明文的方式存于浏览器这，如：哈希值</p>
+                        <div class="md-section-divider"></div>
+                        <h1 data-anchor-id="34hq" id="django中启用session">Django中启用session</h1>
+                        <p data-anchor-id="trpj">
+                            Django通过一个中间件来实现会话功能。要启用会话就要先启用该中间件。编辑settings文件中的MIDDLEWARE设置，确保存在django.contrib.sessions.middleware.SessionMiddleware这一行。在新建的项目中它是默认存在存在的。如果不想启用session则只需要将SessionMiddleware从MIDDLEWARE中删除，将django.contrib.sessions从
+                            INSTALLED_APPS中移除就可以了</p>
+                        <div class="md-section-divider"></div>
+                        <h1 data-anchor-id="sscv" id="session中常见的一些方法">session中常见的一些方法</h1>
+                        <p data-anchor-id="23qf">
+                            session有一些类似于字典数据类型的方法，如：keys()，items()，setdefault()，clear()。除此之外还有一些经常会使用的的方法</p>
+                        <blockquote data-anchor-id="e9b8" class="white-blockquote">
+                            <ul>
+                                <li><strong>flush()</strong>：删除会话数据和会话cookies，常用于用户登出后删除用户会话</li>
+                                <li><p><strong>set_expiry()</strong>：设置cookies有效时间，可以传递不同的类型</p>
+
+                                    <blockquote class="white-blockquote">
+                                        <ul>
+                                            <li><strong><em>整数</em></strong>：session将在对应的秒数后失效，例如：set_expriy(100)
+                                                100秒后失效
+                                            </li>
+                                            <li><strong><em>datetime</em></strong>或者<em>timedelta</em>：在指定的日期失效</li>
+                                            <li><strong><em>0</em></strong>：用户关闭浏览器后失效</li>
+                                            <li><strong><em>None</em></strong>：使用全局失效策略</li>
+                                        </ul>
+                                    </blockquote>
+                                </li>
+                                <li><p><strong>get_expiry_age()</strong>：返回多少秒后失效，没有自定义失效时间，等同于<strong><em>session_cookie_age</em></strong>,接受两个可选关键字作为参数
+                                </p>
+
+                                    <blockquote class="white-blockquote">
+                                        <ul>
+                                            <li><strong><em>modification</em></strong>：会话的最后修改时间（<em>datetime</em>）对象，默认当前时间
+                                            </li>
+                                            <li>
+                                                <strong><em>expiry</em></strong>：会话失效信息，可以是<strong><em>datetime</em></strong>对象也可以是<strong><em>int</em></strong>
+                                                , <strong><em>None</em></strong></li>
+                                        </ul>
+                                    </blockquote>
+                                </li>
+                            </ul>
                         </blockquote>
-                        <p>本教程将带你使用 Django 快速开发属于自己的 Blog 网站。</p>
-                        <h2>教程特点</h2>
-                        <p>免费、中文、零基础，完整的项目，基于最新版 Django 1.10 和 Python 3.5。</p>
-                        <p>带你从零开始一步步开发属于自己的博客网站，帮助你以最快的速度掌握 Django 开发的技巧。</p>
-                        <h2>谁适合这个教程</h2>
-                        <p><strong>本教程主要面向零基础的 Django 新人。</strong></p>
-                        <p>只需要一点点 Python 语言的基础，就可以顺利阅读本教程。</p>
-                        <p>如果你已有一定的 Django 开发经验，也能从本教程中学到更多的 Django 开发技巧。</p>
-                        <h2>在线预览</h2>
-                        <p>点击预览：<a href=''>Django Blog Demo</a></p>
-                        <p><img src='' alt=''/></p>
-                        <h2>资源列表</h2>
                     </div>
                 </article>
                 <section class="comment-area" id="comment-area">
@@ -111,14 +134,14 @@
                                 <span class="nickname">admin</span>
                                 <time class="submit-date" datetime="2012-11-09T23:15:57+00:00">2017年3月12日 14:56</time>
                                 <div class="text">
-                                    文章观点又有道理又符合人性，这才是真正为了表达观点而写，不是为了迎合某某知名人士粉丝而写。我觉得如果琼瑶是前妻，生了三孩子后被一不知名的女人挖了墙角，我不信谁会说那个女人是追求真爱，说同情琼瑶骂小三的女人都是弱者。
+                                    评价还能咋地，就是凑字数
                                 </div>
                             </li>
                             <li class="comment-item">
-                                <span class="nickname">zmrenwu</span>
+                                <span class="nickname">admin</span>
                                 <time class="submit-date" datetime="2012-11-09T23:15:57+00:00">2017年3月11日 23:56</time>
                                 <div class="text">
-                                    本能有可能会冲破格局，但格局有时候也会拘住本能。
+                                    基于zmrenwu魔改
                                 </div>
                             </li>
                         </ul>
@@ -152,19 +175,16 @@
                     <h3 class="widget-title">文章目录</h3>
                     <ul>
                         <li>
-                            <a href="#">教程特点</a>
+                            <a href="#">session</a>
                         </li>
                         <li>
-                            <a href="#">谁适合这个教程</a>
+                            <a href="#">session和cookies</a>
                         </li>
                         <li>
-                            <a href="#">在线预览</a>
+                            <a href="#">Django中启用session</a>
                         </li>
                         <li>
-                            <a href="#">资源列表</a>
-                        </li>
-                        <li>
-                            <a href="#">获取帮助</a>
+                            <a href="#">session中常见的一些方法</a>
                         </li>
                     </ul>
                 </div>
@@ -172,13 +192,13 @@
                     <h3 class="widget-title">最新文章</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客开发入门教程：前言</a>
+                            <a href="#">Django中使用session会话</a>
                         </li>
                         <li>
-                            <a href="#">Django 博客使用 Markdown 自动生成文章目录</a>
+                            <a href="#">浅谈Web性能测试</a>
                         </li>
                         <li>
-                            <a href="#">部署 Django 博客</a>
+                            <a href="#">Python的全局锁问题</a>
                         </li>
                     </ul>
                 </div>
@@ -186,32 +206,30 @@
                     <h3 class="widget-title">归档</h3>
                     <ul>
                         <li>
-                            <a href="#">2017 年 5 月</a>
+                            <a href="#">2019 年 7 月</a>
                         </li>
                         <li>
-                            <a href="#">2017 年 4 月</a>
+                            <a href="#">2019 年 6 月</a>
                         </li>
                         <li>
-                            <a href="#">2017 年 3 月</a>
+                            <a href="#">2019 年 5 月</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="widget widget-category">
                     <h3 class="widget-title">分类</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客教程 <span class="post-count">(13)</span></a>
+                            <a href="#">Django开发 <span class="post-count"></span></a>
                         </li>
                         <li>
-                            <a href="#">Python 教程 <span class="post-count">(11)</span></a>
+                            <a href="#">Python <span class="post-count">(2)</span></a>
                         </li>
                         <li>
-                            <a href="#">Django 用户认证 <span class="post-count">(8)</span></a>
+                            <a href="#">软件测试 <span class="post-count"></span></a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="widget widget-tag-cloud">
                     <h3 class="widget-title">标签云</h3>
                     <ul>
@@ -222,16 +240,10 @@
                             <a href="#">Python</a>
                         </li>
                         <li>
-                            <a href="#">Java</a>
+                            <a href="#">Session</a>
                         </li>
                         <li>
-                            <a href="#">笔记</a>
-                        </li>
-                        <li>
-                            <a href="#">文档</a>
-                        </li>
-                        <li>
-                            <a href="#">AngularJS</a>
+                            <a href="#">软件测试</a>
                         </li>
                         <li>
                             <a href="#">CSS</a>
@@ -240,15 +252,12 @@
                             <a href="#">JavaScript</a>
                         </li>
                         <li>
-                            <a href="#">Snippet</a>
-                        </li>
-                        <li>
-                            <a href="#">jQuery</a>
+                            <a href="#">Markdown</a>
                         </li>
                     </ul>
                 </div>
                 <div class="rss">
-                    <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+                    <a href="#"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
                 </div>
             </aside>
         </div>
@@ -263,20 +272,6 @@
         </div>
     </div>
 </div>
-
-<!-- 移动设备菜单-->
-<div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
-        </ul>
-    </nav>
-</div>
 <script src="js/script.js"></script>
-
 </body>
 </html>

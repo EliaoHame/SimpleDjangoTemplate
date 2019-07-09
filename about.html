@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About</title>
+    <title>关于</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,21 +26,16 @@
                 </div><!-- col-md-4 -->
                 <div class="col-md-8 col-sm-7 col-xs-4">
                     <nav class="main-nav" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" id="trigger-overlay" class="navbar-toggle">
-                                <span class="ion-navicon"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse primary-menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left">
                                 <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                                 <li class="cl-effect-11"><a href="archive.html" data-hover="归档">归档</a></li>
-                                <li class="cl-effect-11 dropdown">
+                                <li class="cl-effect-11 menu-item-has-children">
                                     <a href="category.html" data-hover="分类">分类</a>
-                                    <ul class="dropdown-menu dropdowns-content">
-                                        <li><a href="category.html">Django 博客教程</a></li>
-                                        <li><a href="category.html">Python教程</a></li>
-                                        <li><a href="category.html">Django用户认证</a></li>
+                                    <ul>
+                                        <li><a href="category.html">Django开发</a></li>
+                                        <li><a href="category.html">Python</a></li>
+                                        <li><a href="category.html">软件测试</a></li>
                                     </ul>
                                 </li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
@@ -71,19 +66,33 @@
                             <h1 class="title">关于</h1>
                         </div>
                         <div class="post-content" style="padding-bottom: 20px">
-                            <h1>标题一</h1>
-                            <h2>标题二</h2>
-                            <h3>标题三</h3>
-                            <h4>标题四</h4>
-                            <h5>标题五</h5>
-                            <p>文章内容</p>
-                            <ul>
-                                <li>列表一</li>
-                                <li>列表三</li>
-                                <li>列表四</li>
-                                <li>列表五</li>
-                                <li>列表六</li>
-                            </ul>
+                            <h1 data-anchor-id="7vnw" id="博主who-am-i">博主：WHO AM I</h1>
+                            <blockquote data-anchor-id="rwjy" class="white-blockquote">
+                                <ul>
+                                    <li>一个混迹于互联网的二道贩子，你信不信？</li>
+                                </ul>
+                            </blockquote>
+                            <div class="md-section-divider"></div>
+                            <h1 data-anchor-id="jx2i" id="技能">技能</h1>
+                            <blockquote data-anchor-id="f3nq" class="white-blockquote">
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Mysql</li>
+                                    <li>JavaScript</li>
+                                    <li>Linux</li>
+                                    <li>爬虫</li>
+                                    <li>软件测试</li>
+                                    <li>性能测试</li>
+                                    <li>自动化测试</li>
+                                    <li>网络安全</li>
+                                    <li>以上统统不会！！！！！！！</li>
+                                </ul>
+                            </blockquote>
+                            <div class="md-section-divider"></div>
+                            <h1 data-anchor-id="ms68" id="愿君一阅">愿君一阅</h1>
+                            <p data-anchor-id="eqxi"><img
+                                    src="http://wx1.sinaimg.cn/large/006m97Kgly1ftmb1yc189j30v90usq66.jpg" alt="Image"
+                                    title=""></p>
                         </div>
                     </div>
                 </article>
@@ -101,18 +110,6 @@
     </div>
 </div>
 <button class="gototop isvisible" style="display: inline-block;"><span>⬆</span></button>
-<!-- 移动设备菜单-->
-<div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
-        </ul>
-    </nav>
-</div>
 <script src="js/script.js"></script>
 </body>
 </html>

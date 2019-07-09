@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index</title>
+    <title>首页</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,21 +27,16 @@
                 </div><!-- col-md-4 -->
                 <div class="col-md-8 col-sm-7 col-xs-4">
                     <nav class="main-nav" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" id="trigger-overlay" class="navbar-toggle">
-                                <span class="ion-navicon"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse primary-menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left">
                                 <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                                 <li class="cl-effect-11"><a href="archive.html" data-hover="归档">归档</a></li>
-                                <li class="cl-effect-11 dropdown">
+                                <li class="cl-effect-11 menu-item-has-children">
                                     <a href="category.html" data-hover="分类">分类</a>
-                                    <ul class="dropdown-menu dropdowns-content">
-                                        <li><a href="category.html">Django 博客教程</a></li>
-                                        <li><a href="category.html">Python教程</a></li>
-                                        <li><a href="category.html">Django用户认证</a></li>
+                                    <ul>
+                                        <li><a href="category.html">Django开发</a></li>
+                                        <li><a href="category.html">Python</a></li>
+                                        <li><a href="category.html">软件测试</a></li>
                                     </ul>
                                 </li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
@@ -69,15 +64,14 @@
                 <article class="post post-1">
                     <header class="entry-header">
                         <h1 class="entry-title">
-                            <a href="detail.html">Django 博客开发入门教程：前言</a>
+                            <a href="detail.html">Django中使用session会话</a>
                         </h1>
                         <div class="entry-meta">
-                            <span class="post-category"><a href="#">Django 博客教程</a></span>
+                            <span class="post-category"><a href="#">Django开发</a></span>
                             <span class="post-date"><a href="#"><time class="entry-date"
-                                                                      datetime="2012-11-09T23:15:57+00:00">2017年5月11日</time></a></span>
-                            <span class="post-author"><a href="#">追梦人物</a></span>
+                                                                      datetime="2019-07-01T23:15:57+00:00">2019年07月01日</time></a></span>
                             <span class="comments-link"><a href="#">4 评论</a></span>
-                            <span class="views-count"><a href="#">588 阅读</a></span>
+                            <span class="views-count"><a href="#">888 阅读</a></span>
                         </div>
                     </header>
                     <div class="entry-content clearfix">
@@ -86,12 +80,11 @@
                                 <img class="thumbnail" src="./img/django.png" alt="title" style="display: block;">
                             </a>
                         </div>
-                        <p>免费、中文、零基础，完整的项目，基于最新版 Django 1.10 和 Python 3.5。带你从零开始一步步开发属于自己的博客网站，帮助你以最快的速度掌握 Django
-                            开发的技巧...</p>
+                        <p>django支持匿名会话。它将数据存放在服务器端，并抽象cookies的发送和接收过程。cookie包含一个会话ID而不是数据本身（除非你使用的是基于后端的cookie）</p>
                         <div class="post-entry-categories">
-                            <a href="#">标签一</a>
-                            <a href="#">标签二</a>
-                            <a href="#">标签三</a>
+                            <a href="#">Django</a>
+                            <a href="#">Session</a>
+                            <a href="#">Python</a>
                         </div>
                         <div class="read-more cl-effect-14">
                             <a href="#" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
@@ -101,19 +94,21 @@
                 <article class="post post-2">
                     <header class="entry-header">
                         <h1 class="entry-title">
-                            <a href="detail.html">JAVA开发入门教程：前言</a>
+                            <a href="detail.html">浅谈Web性能测试</a>
                         </h1>
                         <div class="entry-meta">
-                            <span class="post-category"><a href="#">JAVA开</a></span>
+                            <span class="post-category"><a href="#">软件测试</a></span>
                             <span class="post-date"><a href="#"><time class="entry-date"
-                                                                      datetime="2012-11-09T23:15:57+00:00">2017年5月11日</time></a></span>
-                            <span class="post-author"><a href="#">admin</a></span>
+                                                                      datetime="2019-06-29T23:15:57+00:00">2019年06月29日</time></a></span>
                             <span class="comments-link"><a href="#">41 评论</a></span>
-                            <span class="views-count"><a href="#">5188 阅读</a></span>
+                            <span class="views-count"><a href="#">666 阅读</a></span>
                         </div>
                     </header>
                     <div class="entry-content clearfix">
-                        <p>Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。 Java可运行于多个平台，如Windows, Mac OS，及其他多种UNIX版本的系统。 通过...</p>
+                        <p>性能测试，简而言之就是模仿用户对一个系统进行大批量的操作，得出系统各项性能指标和性能瓶颈，并从中发现存在的问题，通过多方协助调优的过程。而web端的性能...</p>
+                        <div class="post-entry-categories">
+                            <a href="#">软件测试</a>
+                        </div>
                         <div class="read-more cl-effect-14">
                             <a href="#" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
                         </div>
@@ -122,19 +117,23 @@
                 <article class="post post-3">
                     <header class="entry-header">
                         <h1 class="entry-title">
-                            <a href="detail.html">Python入门</a>
+                            <a href="detail.html">Python的全局锁问题</a>
                         </h1>
                         <div class="entry-meta">
-                            <span class="post-category"><a href="#">Python入门</a></span>
+                            <span class="post-category"><a href="#">Python</a></span>
                             <span class="post-date"><a href="#"><time class="entry-date"
-                                                                      datetime="2012-11-09T23:15:57+00:00">2017年5月11日</time></a></span>
-                            <span class="post-author"><a href="#">admin</a></span>
+                                                                      datetime="2019-07-08T23:15:57+00:00">2019年07月08日</time></a></span>
                             <span class="comments-link"><a href="#">4 评论</a></span>
-                            <span class="views-count"><a href="#">588 阅读</a></span>
+                            <span class="views-count"><a href="#">999 阅读</a></span>
                         </div>
                     </header>
                     <div class="entry-content clearfix">
-                        <p>Python 基础教程Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。 ... 对于大多数程序语言，第一个入门编程代码便是"Hello World！"，...</p>
+                        <p>尽管Python完全支持多线程编程， 但是解释器的C语言实现部分在完全并行执行时并不是线程安全的。 实际上，解释器被一个全局解释器锁保护着，它确保任何时候都只有一个Python线程执行。
+                            GIL最大的问题就是Python的多线程程序并不能利用多核CPU...</p>
+                        <div class="post-entry-categories">
+                            <a href="#">全局锁</a>
+                            <a href="#">Python</a>
+                        </div>
                         <div class="read-more cl-effect-14">
                             <a href="#" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
                         </div>
@@ -159,13 +158,13 @@
                     <h3 class="widget-title">最新文章</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客开发入门教程：前言</a>
+                            <a href="#">Django中使用session会话</a>
                         </li>
                         <li>
-                            <a href="#">Django 博客使用 Markdown 自动生成文章目录</a>
+                            <a href="#">浅谈Web性能测试</a>
                         </li>
                         <li>
-                            <a href="#">部署 Django 博客</a>
+                            <a href="#">Python的全局锁问题</a>
                         </li>
                     </ul>
                 </div>
@@ -173,13 +172,13 @@
                     <h3 class="widget-title">归档</h3>
                     <ul>
                         <li>
-                            <a href="#">2017 年 5 月</a>
+                            <a href="#">2019 年 7 月</a>
                         </li>
                         <li>
-                            <a href="#">2017 年 4 月</a>
+                            <a href="#">2019 年 6 月</a>
                         </li>
                         <li>
-                            <a href="#">2017 年 3 月</a>
+                            <a href="#">2019 年 5 月</a>
                         </li>
                     </ul>
                 </div>
@@ -187,13 +186,13 @@
                     <h3 class="widget-title">分类</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客教程 <span class="post-count">(13)</span></a>
+                            <a href="#">Django开发 <span class="post-count"></span></a>
                         </li>
                         <li>
-                            <a href="#">Python 教程 <span class="post-count">(11)</span></a>
+                            <a href="#">Python <span class="post-count">(2)</span></a>
                         </li>
                         <li>
-                            <a href="#">Django 用户认证 <span class="post-count">(8)</span></a>
+                            <a href="#">软件测试 <span class="post-count"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -207,16 +206,10 @@
                             <a href="#">Python</a>
                         </li>
                         <li>
-                            <a href="#">Java</a>
+                            <a href="#">Session</a>
                         </li>
                         <li>
-                            <a href="#">笔记</a>
-                        </li>
-                        <li>
-                            <a href="#">文档</a>
-                        </li>
-                        <li>
-                            <a href="#">AngularJS</a>
+                            <a href="#">软件测试</a>
                         </li>
                         <li>
                             <a href="#">CSS</a>
@@ -225,15 +218,12 @@
                             <a href="#">JavaScript</a>
                         </li>
                         <li>
-                            <a href="#">Snippet</a>
-                        </li>
-                        <li>
-                            <a href="#">jQuery</a>
+                            <a href="#">Markdown</a>
                         </li>
                     </ul>
                 </div>
                 <div class="rss">
-                    <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+                    <a href="#"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
                 </div>
             </aside>
         </div>
@@ -248,22 +238,6 @@
         </div>
     </div>
 </div>
-
-<!-- 移动设备菜单-->
-<div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
-        </ul>
-    </nav>
-</div>
 <script src="js/script.js"></script>
-
 </body>
 </html>
-<!--todo 下拉菜单优化-->
-

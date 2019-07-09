@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Archive</title>
+    <title>归档</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,21 +26,16 @@
                 </div><!-- col-md-4 -->
                 <div class="col-md-8 col-sm-7 col-xs-4">
                     <nav class="main-nav" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" id="trigger-overlay" class="navbar-toggle">
-                                <span class="ion-navicon"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse primary-menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left">
                                 <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                                 <li class="cl-effect-11"><a href="archive.html" data-hover="归档">归档</a></li>
-                                <li class="cl-effect-11 dropdown">
+                                <li class="cl-effect-11 menu-item-has-children">
                                     <a href="category.html" data-hover="分类">分类</a>
-                                    <ul class="dropdown-menu dropdowns-content">
-                                        <li><a href="category.html">Django 博客教程</a></li>
-                                        <li><a href="category.html">Python教程</a></li>
-                                        <li><a href="category.html">Django用户认证</a></li>
+                                    <ul>
+                                        <li><a href="category.html">Django开发</a></li>
+                                        <li><a href="category.html">Python</a></li>
+                                        <li><a href="category.html">软件测试</a></li>
                                     </ul>
                                 </li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
@@ -107,13 +102,13 @@
                     <h3 class="widget-title">最新文章</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客开发入门教程：前言</a>
+                            <a href="#">Django中使用session会话</a>
                         </li>
                         <li>
-                            <a href="#">Django 博客使用 Markdown 自动生成文章目录</a>
+                            <a href="#">浅谈Web性能测试</a>
                         </li>
                         <li>
-                            <a href="#">部署 Django 博客</a>
+                            <a href="#">Python的全局锁问题</a>
                         </li>
                     </ul>
                 </div>
@@ -121,13 +116,13 @@
                     <h3 class="widget-title">归档</h3>
                     <ul>
                         <li>
-                            <a href="#">2017 年 5 月</a>
+                            <a href="#">2019 年 7 月</a>
                         </li>
                         <li>
-                            <a href="#">2017 年 4 月</a>
+                            <a href="#">2019 年 6 月</a>
                         </li>
                         <li>
-                            <a href="#">2017 年 3 月</a>
+                            <a href="#">2019 年 5 月</a>
                         </li>
                     </ul>
                 </div>
@@ -135,13 +130,13 @@
                     <h3 class="widget-title">分类</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客教程 <span class="post-count">(13)</span></a>
+                            <a href="#">Django开发 <span class="post-count"></span></a>
                         </li>
                         <li>
-                            <a href="#">Python 教程 <span class="post-count">(11)</span></a>
+                            <a href="#">Python <span class="post-count">(2)</span></a>
                         </li>
                         <li>
-                            <a href="#">Django 用户认证 <span class="post-count">(8)</span></a>
+                            <a href="#">软件测试 <span class="post-count"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -155,16 +150,10 @@
                             <a href="#">Python</a>
                         </li>
                         <li>
-                            <a href="#">Java</a>
+                            <a href="#">Session</a>
                         </li>
                         <li>
-                            <a href="#">笔记</a>
-                        </li>
-                        <li>
-                            <a href="#">文档</a>
-                        </li>
-                        <li>
-                            <a href="#">AngularJS</a>
+                            <a href="#">软件测试</a>
                         </li>
                         <li>
                             <a href="#">CSS</a>
@@ -173,15 +162,12 @@
                             <a href="#">JavaScript</a>
                         </li>
                         <li>
-                            <a href="#">Snippet</a>
-                        </li>
-                        <li>
-                            <a href="#">jQuery</a>
+                            <a href="#">Markdown</a>
                         </li>
                     </ul>
                 </div>
                 <div class="rss">
-                    <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+                    <a href="#"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
                 </div>
             </aside>
         </div>

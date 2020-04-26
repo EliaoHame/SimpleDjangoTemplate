@@ -2,7 +2,7 @@
 ## 基于: [zmrenwu](https://github.com/zmrenwu/django-blog-tutorial-templates) 🛠🛠🛠🛠🛠
 
 ### 首页
-![UTOOLS1587911628263.png](http://yanxuan.nosdn.127.net/2e2408eda3776fe498355d00ef9642c9.png)
+![UTOOLS1587911628263.png](img/show/2e2408eda3776fe498355d00ef9642c9.png)
 ![UTOOLS1587911643220.png](http://yanxuan.nosdn.127.net/fc048906ef141bebd3781ff89a7b33d8.png)
 
 ### 文章
